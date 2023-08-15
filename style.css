@@ -34,7 +34,8 @@ section{
 }
 .max-width{
     max-width: 1300px;
-    /* width: 100%; */
+    width: 100%;
+   
     padding: 0 80px;
     margin: auto;
 }
@@ -83,7 +84,8 @@ section .title::after{
 /* navbar styling */
 .navbar{
     position: fixed;
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100%);
     z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
@@ -167,7 +169,7 @@ section .title::after{
 
 /* home section styling */
 .home{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     background: url("images/MU3.png") no-repeat center;
     height: 100vh;
@@ -811,10 +813,14 @@ footer span a:hover{
         padding: 10px 30px;
     }
     .max-width{
-        max-width: 930px;
+        /* max-width: 930px; */
+        max-width: calc(930px);
     }
     .about .about-content .column{
         width: 100%;
+    }
+    .about .about-content .column .tab-links{
+        margin-right: 30px;
     }
     .skillss .skill-content .card {
         width: calc(50% - 75px);
@@ -825,7 +831,7 @@ footer span a:hover{
         width: calc(100%);
         height: calc(100%);
         object-fit: contain;
-        
+
       }
     .about .about-content .left{
         display: flex;
@@ -870,6 +876,9 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .about .column .tab-titles{
+        width: calc(100%);
     }
     .skillss .skills-content .column {
         width: calc(20%-90px);
