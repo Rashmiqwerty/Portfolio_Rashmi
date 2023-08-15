@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,9 +30,11 @@ html{
 /* all similar content styling codes */
 section{
     padding: 100px 0;
+   
 }
 .max-width{
     max-width: 1300px;
+    /* width: 100%; */
     padding: 0 80px;
     margin: auto;
 }
@@ -164,6 +167,7 @@ section .title::after{
 
 /* home section styling */
 .home{
+    width: 100%;
     display: flex;
     background: url("images/MU3.png") no-repeat center;
     height: 100vh;
@@ -428,7 +432,7 @@ section .title::after{
     color: #fff;
     background: black;
     /* background: white; */
-    /* width: 100% */
+    width: 100%
     
     
    }
@@ -817,6 +821,12 @@ footer span a:hover{
         margin: 10px;
         /* margin-right: -35px; */
       }
+      .skillss .skill-content .card img{
+        width: calc(100%);
+        height: calc(100%);
+        object-fit: contain;
+        
+      }
     .about .about-content .left{
         display: flex;
         justify-content: center;
@@ -850,6 +860,7 @@ footer span a:hover{
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
+        /* width: 100%; */
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -861,7 +872,7 @@ footer span a:hover{
         font-size: 20px;
     }
     .skillss .skills-content .column {
-        width: calc(25%);
+        width: calc(20%-90px);
       }
       .skillss .skill-content .card {
         width: calc(25%-90px);
